@@ -1,4 +1,7 @@
 JsonHighCharts::Application.routes.draw do
+  get "charts/index"
+  get "charts/get_data"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
