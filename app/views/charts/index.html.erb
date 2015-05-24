@@ -15,7 +15,8 @@
         series: [{}]
     };
 
-    $.getJSON('/charts/get_data', function(data) {
+    // Ajax call to HTTP GET method from RESTful service
+    $.getJSON('/api/v1/charts', function(data) {
         options.series[0].data = data;
         var chart = new Highcharts.Chart(options);
     });
