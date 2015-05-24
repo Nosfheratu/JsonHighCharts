@@ -4,6 +4,12 @@ JsonHighCharts::Application.routes.draw do
 
   root to: "charts#index"
 
+  namespace :api do
+    namespace :v1 do
+      resources :charts
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
